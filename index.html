@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Base</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <header>
+            <h1 class="title">Calculadora Base</h1>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+        
+        <div class="calculator">
+            <div class="display-area">
+                <div class="display">
+                    <div class="previous-operation" id="previousOperation"></div>
+                    <div class="current-operation" id="currentOperation">0</div>
+                </div>
+                
+                <div class="buttons-grid">
+                    <button class="clear" id="clear">C</button>
+                    <button class="delete" id="delete">DEL</button>
+                    <button class="operator" data-operation="%">%</button>
+                    <button class="operator" data-operation="/">÷</button>
+                    
+                    <button class="number" data-number="7">7</button>
+                    <button class="number" data-number="8">8</button>
+                    <button class="number" data-number="9">9</button>
+                    <button class="operator" data-operation="*">×</button>
+                    
+                    <button class="number" data-number="4">4</button>
+                    <button class="number" data-number="5">5</button>
+                    <button class="number" data-number="6">6</button>
+                    <button class="operator" data-operation="-">−</button>
+                    
+                    <button class="number" data-number="1">1</button>
+                    <button class="number" data-number="2">2</button>
+                    <button class="number" data-number="3">3</button>
+                    <button class="operator" data-operation="+">+</button>
+                    
+                    <button class="number" data-number="0">0</button>
+                    <button class="number" data-number=".">.</button>
+                    <button class="equals" id="equals">=</button>
+                </div>
+            </div>
+            
+            <div class="history-container">
+                <div class="history-title">
+                    <span>Histórico</span>
+                    <button class="clear-history" id="clearHistory">Limpar</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <!-- Histórico será preenchido via JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Calculadora Base | Projeto para GitHub D</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
